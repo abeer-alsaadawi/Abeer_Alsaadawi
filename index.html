@@ -1022,7 +1022,7 @@
             width: 200%;
             height: 200%;
             background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-            animation: shimmer 3s linear infinite;
+            
             pointer-events: none;
         }
 
@@ -1035,13 +1035,13 @@
             letter-spacing: 0.1em;
             position: relative;
             z-index: 2;
-            animation: glow 2s ease-in-out infinite alternate;
+            
         }
 
         .number-display .digit-group {
             display: inline-block;
             margin: 0 0.3rem;
-            animation: bounce 2s ease-in-out infinite;
+            
         }
 
         .copy-button {
@@ -1076,15 +1076,7 @@
             transition: left 0.5s;
         }
 
-        .copy-button:hover {
-            transform: translateY(-3px) scale(1.05);
-            box-shadow: 0 15px 35px rgba(255, 107, 107, 0.4);
-        }
-
-        .copy-button:hover::before {
-            left: 100%;
-        }
-
+       
         .copy-icon {
             width: 20px;
             height: 20px;
@@ -1636,3 +1628,4 @@ document.addEventListener('DOMContentLoaded', function() {
     </script>
 </body>
 </html>
+
