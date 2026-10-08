@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="سياسة الخصوصية وأمان البيانات لتطبيق ومنصة الأستاذة عبير السعداوي التعليمية - حماية البيانات، تشفير الحسابات، وإجراءات حذف البيانات.">
+    <link rel="canonical" href="https://abeer-alsaadawi.com/privacy">
+    <title>سياسة الخصوصية وأمان البيانات (Privacy Policy) | منصة عبير السعداوي التعليمية</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1D4ED8;
+            --primary-dark: #1E3A8A;
+            --surface: #FFFFFF;
+            --bg: #F8FAFC;
+            --text-main: #0F172A;
+            --text-muted: #64748B;
+            --border: #E2E8F0;
+            --emerald: #10B981;
+            --amber: #D97706;
+            --red: #DC2626;
+            --red-bg: #FEF2F2;
+            --red-border: #FCA5A5;
+            --whatsapp: #25D366;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'IBM Plex Sans Arabic', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.85;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 880px;
+            margin: 0 auto;
+            background: var(--surface);
+            border-radius: 20px;
+            border: 1px solid var(--border);
+            padding: 44px 36px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+        }
+
+        .header {
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+        .header h1 {
+            color: var(--primary);
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(29, 78, 216, 0.1);
+            color: var(--primary);
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        h2 {
+            color: var(--primary-dark);
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 32px;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        p, li {
+            font-size: 14.5px;
+            color: #334155;
+            margin-bottom: 12px;
+        }
+
+        ul {
+            padding-right: 24px;
+            margin-bottom: 18px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight-box {
+            background: #F1F5F9;
+            border-right: 4px solid var(--primary);
+            padding: 18px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+
+        .warning-box {
+            background: #FEF2F2;
+            border-right: 4px solid var(--red);
+            padding: 18px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-size: 14px;
+            color: #991B1B;
+        }
+
+        /* ── Deletion Web Card for Google Play Compliance ── */
+        .deletion-card {
+            background: #FFF5F5;
+            border: 1.5px solid var(--red-border);
+            border-radius: 14px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .deletion-card h3 {
+            color: var(--red);
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .action-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 13.5px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .btn-delete {
+            background-color: var(--red);
+            color: #FFFFFF !important;
+        }
+
+        .btn-delete:hover {
+            background-color: #B91C1C;
+        }
+
+        .btn-whatsapp {
+            background-color: #128C7E;
+            color: #FFFFFF !important;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #075E54;
+        }
+
+        .btn-copy {
+            background-color: #4B5563;
+            color: #FFFFFF !important;
+            border: none;
+        }
+
+        .btn-copy:hover {
+            background-color: #374151;
+        }
+
+        .copy-alert {
+            display: none;
+            background: #D1FAE5;
+            color: #065F46;
+            border: 1px solid #A7F3D0;
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-size: 13px;
+            margin-top: 12px;
+            font-weight: 600;
+        }
+
+        .contact-box {
+            background: #EFF6FF;
+            border: 1px solid #BFDBFE;
+            border-radius: 14px;
+            padding: 24px;
+            margin-top: 36px;
+            text-align: center;
+        }
+
+        .contact-box h3 {
+            color: var(--primary);
+            font-size: 17px;
+            margin-bottom: 8px;
+        }
+
+        .contact-box a {
+            color: var(--primary);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <span class="badge">سياسة الخصوصية وأمان البيانات • الإصدار 1.6</span>
+        <h1>سياسة الخصوصية وحماية البيانات (Privacy Policy)</h1>
+        <p>Abeer Alsaadawi Educational Platform • تاريخ النفاذ: أكتوبر 2026</p>
+    </div>
+
+    <div class="nav-links">
+        <a href="/">العودة للرئيسية</a>
+        <span>&bull;</span>
+        <a href="/terms">شروط الاستخدام والخدمة (Terms of Service)</a>
+    </div>
+
+    <div class="highlight-box">
+        <strong>بيان الخصوصية وأمان البيانات:</strong> توضح هذه الوثيقة سياسة الخصوصية وحماية بيانات الطلاب وأولياء الأمور في تطبيق «منصة عبير السعداوي التعليمية». للاطلاع على اتفاقية ترخيص المستخدم وحقوق الملكية الفكرية وقفل الجهاز الواحد، يُرجى مراجعة <a href="/terms" style="color: var(--primary); font-weight: 700;">شروط الاستخدام والخدمة</a>.
+    </div>
+
+    <h2>1. مقدمة ونطاق التطبيق</h2>
+    <p>
+        تُشكل هذه الوثيقة سياسة الخصوصية الرسمية المعمول بها في <strong>«منصة عبير السعداوي التعليمية» (Abeer Alsaadawi Educational Platform)</strong>. إن تسجيل الدخول إلى التطبيق عبر البريد الإلكتروني وكلمة المرور، أو حساب Google، أو حساب Apple (Sign in with Apple)، أو إنشاء الحساب، أو استخدامه، يُعد موافقة صريحة على جمع ومعالجة البيانات للأغراض التعليمية والأمنية المحددة في هذه السياسة.
+    </p>
+
+    <h2>2. البيانات التي يتم جمعها</h2>
+    <p>لتقديم الخدمات التعليمية الرقمية وتأمين المحتوى الأكاديمي ومعالجة وتوصيل طلبات الملازم، نقوم بجمع ومعالجة البيانات التالية حصراً:</p>
+    <ul>
+        <li><strong>معلومات الحساب والمصادقة الأمنية:</strong> الاسم الكامل، البريد الإلكتروني، رقم الهاتف العراقي (المستخدم للتواصل والتحقق وتوصيل المطبوعات)، المرحلة الدراسية، والمحافظة. في حال التسجيل بالبريد الإلكتروني، تُحفظ كلمات المرور مشفرة ومحمية حصراً بتقنيات التجزئة والتمليح الأمنية المتقدمة (Cryptographic Salted Hashing) داخل خوادم Supabase الآمنة، ولا يمكن لأي شخص أو للإدارة الاطلاع عليها. وفي حال الدخول عبر Google أو Apple، تتم المصادقة عبر بروتوكولات OAuth 2.0 المشفرة دون حفظ أي كلمات مرور على خوادمنا. كما نؤكد أن التطبيق لا يطلب ولا يجمع أو يخزن أي صور شخصية للمستخدمين أو صور رمزية/Avatar.</li>
+        <li><strong>بيانات التحقق والتسجيل الأكاديمي:</strong> بيانات إثبات القيد والاشتراك في الدورات والبرامج التعليمية المقدمة وفق السياسات الإدارية المعتمدة (مع التأكيد على أن المنصة لا تطلب ولا تخزن أي بيانات مصرفية حساسة أو أرقام بطاقات ائتمان على خوادمها).</li>
+        <li><strong>بيانات شحن وتوصيل الملازم الورقية (Physical Booklets Delivery Data):</strong> عند قيام الطالب بطلب النسخة الورقية للملزمة عبر التطبيق أو قنوات الدعم، نقوم بجمع بيانات التوصيل الأساسية وتشمل: اسم المستلم، رقم هاتف التواصل مع المندوب، المحافظة، المنطقة/الحي، أقرب نقطة دالة، وملاحظات التوصيل. <em>(نهج الخصوصية أولاً: لا يطلب التطبيق ولا يجمع ولا يخزن إحداثيات الموقع الجغرافي الحي أو الدقيق GPS نهائياً؛ بل يعتمد حصراً على العنوان الوصفي التقريبي لتسهيل مهمة مندوب التوصيل، ويكون الدفع نقداً عند الاستلام COD. وفي حال تواصل المندوب مع الطالب لتزويده بالموقع الجغرافي عبر واتساب، فإن ذلك يتم بالتواصل المباشر بمحض إرادة الطالب ودون أي تسجيل لتلك الإحداثيات في قواعد بيانات المنصة).</em></li>
+        <li><strong>معرف الجهاز والحماية الأمنية (Device Fingerprint):</strong> بصمة مشفرة للجهاز لربط الحساب بجهاز الطالب المصرح به، ومنع الاحتيال أو تشارك الحسابات.</li>
+        <li><strong>سجلات المتابعة والتقدم الدراسي (Learning Progress):</strong> نسبة مشاهدة المحاضرات، حل الاختبارات والواجبات، والإحصائيات الدراسية لمتابعة التحصيل العلمي.</li>
+        <li><strong>مشاركات وأسئلة غرف البث المباشر (Live Q&A):</strong> الأسئلة والتعليقات النصية التي يطرحها الطالب أثناء جلسات البث المباشر؛ وتظهر باسمه المسجل للمدرس والمشرفين والزملاء داخل غرفة البث، وتُحفظ في خوادم المنصة لأغراض المتابعة التعليمية والإشراف ومكافحة الرسائل المزعجة.</li>
+        <li><strong>السجلات التقنية التلقائية (Technical & Diagnostic Logs):</strong> سجلات اتصال الخوادم المعتادة لحماية وأمان الأنظمة، وتشمل عنوان بروتوكول الإنترنت (IP)، نوع ونظام تشغيل الجهاز، وتوقيت الاتصال، وسجلات الأخطاء البرمجية لضمان استقرار الخدمة والحماية من الهجمات السيبرانية.</li>
+    </ul>
+
+    <h2>3. الأذونات المطلوبة في التطبيق (Permissions)</h2>
+    <p>يطلب التطبيق أذونات محدودة للغاية ومحصورة بالوظائف المباشرة:</p>
+    <ul>
+        <li><strong>الكاميرا ومعرض الصور (Camera & Media):</strong> مخصصة حصراً لتصوير وإرفاق إيصالات التحويل المالي أو الواجبات والمستندات والشهادات التعليمية (دون طلب الوصول إلى أي ملفات شخصية غير متعلقة بالعملية التعليمية أو جمع أي صور لوجوه المستخدمين).</li>
+        <li><strong>الإنترنت والشبكة (Internet & Network):</strong> للاتصال المشفر بالسيرفر وبث المحاضرات التعليمية وتحديث محتوى التطبيق.</li>
+        <li><strong>الإشعارات (Notifications):</strong> لتنبيه الطالب بمواعيد الامتحانات وتحديثات الدروس وتفعيل الدورات وتحديثات حالة شحن الملازم.</li>
+    </ul>
+
+    <h2>4. حقوق الملكية الفكرية وحماية المحتوى (Intellectual Property & Content Protection)</h2>
+    <div class="warning-box">
+        <strong>⚠️ حماية المحتوى والدروس المسجلة والملازم الدراسية:</strong><br>
+        • جميع المحاضرات المسجلة، الشروحات، الملخصات، وبنوك الأسئلة الخاصة بالدورات هي <strong>حقوق ملكية فكرية حصرية ومسجلة لمنصة وللأستاذة عبير السعداوي</strong>، وتخضع للحماية القانونية الكاملة بموجب أحكام <strong>قانون حماية حق المؤلف العراقي رقم (3) لسنة 1971 وتعديلاته</strong> و<strong>قانون العقوبات العراقي رقم (111) لسنة 1969</strong>.<br>
+        • نطبق حماية <code>FLAG_SECURE</code> البرمجية المشددة على المحاضرات المسجلة لمنع التسجيل وحجب لقطات الشاشة لحماية المحتوى الأكاديمي.<br>
+        • <strong>حقوق الملازم والمطبوعات الورقية:</strong> كافة الملازم والمطبوعات المعروضة بالتطبيق هي مصنفات أدبية وتعليمية محمية ومسجلة كملكية فكرية حصرية، ويُحظر تماماً تصويرها، أو مسحها ضوئياً، أو إعادة طباعتها وتداولها في مكاتب ومطابع الاستنساخ، أو نشرها عبر قنوات ومجموعات تليغرام ومواقع التواصل الاجتماعي، أو بيعها وتوزيعها خارج القنوات الرسمية للمنصة تحت طائلة المساءلة القانونية والملاحقة الجزائية للمطالبة بمصادرة النسخ والآلات والتعويض المالي المشدد.<br>
+        • يُحظر تماماً إعادة بيع الحسابات أو تسريب المواد أو تفكيك التطبيق (Reverse Engineering)، وأي محاولة قرصنة تعرض صاحبها للحظر الدائم والملاحقة القضائية.
+    </div>
+    <p>
+        <strong>• طبيعة البث المباشر المجاني (Free Open Live Streams):</strong> تُقدم جلسات البث المباشر المنقولة عبر بنية YouTube كـ <strong>خدمة تعليمية عامة ومجانية ومفتوحة لجميع الطلاب ومستخدمي التطبيق</strong> بمجرد تثبيت التطبيق دون الحاجة لأي اشتراك مدفوع. تتيح المنصة إمكانية التقاط الشاشة أثناء البث المباشر تيسيراً لتدوين الملاحظات الدراسية، مع اشتراط الالتزام بآداب الحوار والأسئلة الهادفة في غرفة التعليقات المباشرة.
+    </p>
+
+    <h2>5. سياسة الاستخدام الفردي وربط الجهاز وقفل الأمان (Single-Device Policy & Security Lockout)</h2>
+    <p>
+        • كل حساب مخصص لاستخدام <strong>طالب واحد فقط وعلى جهاز هاتف واحد معتمد</strong>.<br>
+        • لا يجوز مشاركة الحساب أو تداوله بين عدة طلاب. في حال رصد محاولات تسجيل دخول غير مصرح بها من أجهزة متعددة، يتم قفل الحساب تلقائياً لدواعي الأمان.<br>
+        • لا يمكن للطالب تغيير جهازه المسجل أو تعديل بياناته الأساسية إلا من خلال التواصل المباشر مع الدعم الفني وتقديم ما يثبت هويته لضمان الأمان.<br>
+        • <strong>حماية الحساب ضد التخمين والاختراق (Brute-Force Lockout):</strong> لحماية أمان وخصوصية حسابات الطلاب، يطبق النظام حظراً أمنياً صارماً لمدة 12 ساعة متواصلة على الجهاز في حال إدخال كلمة المرور بشكل خاطئ 5 مرات متتالية. يشمل الحظر تسجيل الدخول وطلبات إرسال رسائل استعادة كلمة المرور، ويتم تسجيل ذلك تلقائياً في سجلات التدقيق الأمني للأنظمة.
+    </p>
+
+    <h2>6. سياسة المنتجات الرقمية والملازم الدراسية (Digital Services & Malazim Policy)</h2>
+    <p>
+        <strong>• الاشتراكات والخدمات الرقمية:</strong> نظراً لأن الخدمات المقدمة هي محتوى تعليمي رقمي يتم إتاحته للطالب فور إتمام إجراءات السداد والتحقق الرسمية المعتمدة عبر القنوات الرسمية المعمول بها، فإن <strong>جميع مبالغ ورسوم الاشتراكات المدفوعة نهائية وغير قابلة للاسترجاع إطلاقاً (Non-refundable)</strong> بعد التفعيل، ولا يتم استرجاع المبلغ إلا في حالة استثنائية واحدة وهي: حدوث خلل برمجي تقني من طرف المنصة حال دون تفعيل الدورة وتمكين الطالب من الوصول للمحتوى نهائياً بعد استلام وتأكيد السداد.
+    </p>
+    <div class="highlight-box">
+        <strong>• الملازم الدراسية الورقية (طلب مباشر ودفع عند الاستلام — Cash on Delivery):</strong><br>
+        1. <strong>آلية الطلب:</strong> يتيح التطبيق استعراض تفاصيل الملازم وأغلفتها وفهرس محتواها؛ ويكون طلب شراء النسخة الورقية المطبوعة مباشرة من داخل التطبيق (أو عبر التواصل المباشر مع الأستاذة عبر واتساب).<br>
+        2. <strong>طريقة الدفع ومعاينة الشحنة (الدفع عند الاستلام):</strong> يتم سداد ثمن الملزمة وأجور التوصيل <strong>نقداً عند الاستلام (Cash on Delivery)</strong> عند تسلم الطالب لنسخته من مندوب التوصيل. يحق للطالب معاينة الملزمة والتأكد من سلامتها فور وصول المندوب؛ وفي حال عدم رغبة الطالب في استلام الملزمة بعد معاينتها عند الباب، يلتزم الطالب بسداد أجور شركة التوصيل للمندوب فقط (أجور النقل).<br>
+        3. <strong>حظر الطلبات الوهمية والكيدية:</strong> يُعد تأكيد طلب الملزمة التزاماً تعاقدياً جاداً بالاستلام وسداد الأجور. في حال إدخال موقع وهمي أو بيانات كاذبة أو الامتناع غير المبرر عن استقبال المندوب بهدف الإضرار بالمنصة أو تكبيدها خسائر أجور الطباعة والشحن، يحق لإدارة المنصة حظر حساب الطالب نهائياً من كافة الخدمات والدورات، وإدراج رقم الهاتف في القائمة السوداء، والمطالبة القانونية بالتعويض المالي عن نفقات الشحن والطباعة المتكبدة.<br>
+        4. <strong>المعاينة وضمان الجودة والاستبدال المجاني للعيوب المصنعية:</strong> يحق للطالب معاينة الملزمة والتأكد من سلامتها وجودة طباعتها وتجليدها فور الاستلام. وفي حال وجود أي عيب طباعي مصنعي صادر عن المطبعة (مثل نقص صفحات أو تشوه طباعي) أو تلف أثناء النقل، يحق للطالب إشعار الأستاذة والدعم الفني خلال <strong>48 ساعة</strong> من الاستلام لاستبدال النسخة المتضررة بنسخة سليمة مجاناً.<br>
+        5. <strong>مسؤولية دقة العنوان:</strong> يتحمل الطالب مسؤولية صحة ودقة رقم الهاتف والعنوان الوصفي المزود لضمان سرعة تواصل المندوب وتسليم الشحنة في الموعد المحدد.
+    </div>
+
+    <h2>7. مشاركة البيانات مع أطراف ثالثة (Third-Party Services)</h2>
+    <p>نحن <strong>لا نبيع</strong> ولا نشارك بيانات الطلاب إطلاقاً مع أي جهات إعلانية أو تجارية. نتعامل فقط مع مزودي البنية التحتية والشركاء التشغيليين الموثوقين لتشغيل التطبيق:</p>
+    <ul>
+        <li><strong>Supabase:</strong> لتشغيل قواعد البيانات والتوثيق الآمن المشفر بمعايير RLS، وإدارة طلبات الملازم وغرف الأسئلة والتعليقات الحية التفاعلية (Realtime Live Q&A) داخلياً.</li>
+        <li><strong>Resend (عبر بنية Amazon SES التحتية في أيرلندا - الاتحاد الأوروبي):</strong> لإرسال رسائل التحقق والتأكيد وتعيين كلمة المرور الرسمية المنبثقة حصراً من عنوان البريد المعتمد (<code>noreply@abeer-alsaadawi.com</code>). لا يُستخدم البريد لأي حملات ترويجية إطلاقاً.</li>
+        <li><strong>Apple (Sign in with Apple):</strong> لتمكين مستخدمي هواتف iPhone وأجهزة iOS من تسجيل الدخول الآمن والمشفر بلمسة واحدة بموجب متطلبات App Store Review Guideline 4.8، مع الدعم الكامل لخاصية التمويه وإخفاء البريد (Hide My Email).</li>
+        <li><strong>Bunny.net:</strong> لتوصيل وبث الفيديو المشفر عبر خوادم CDN عالمية فائقة السرعة.</li>
+        <li><strong>خدمات ومُشغّل YouTube (YouTube API Services & Embedded Player):</strong> لتقديم خدمة البث المباشر (Live Streaming) للمحاضرات العامة والتفاعلية المشاهدة <strong>حصراً داخل التطبيق</strong>. عند مشاهدة البث المباشر، يخضع تشغيل الفيديو تقنياً لـ <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener noreferrer">شروط خدمة YouTube (YouTube Terms of Service)</a> ويخضع جمع ومعالجة البيانات لـ <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">سياسة خصوصية Google (Google Privacy Policy)</a>. ويمكن للمستخدمين مراجعة وإلغاء صلاحيات حسابات Google عبر <a href="https://security.google.com/settings/security/permissions" target="_blank" rel="noopener noreferrer">صفحة إعدادات أمان Google</a>. <em>(تنويه هام: أسئلة وتعليقات الطلاب وتفاعلهم أثناء البث تتم إدارتها وحفظها بالكامل داخلياً عبر خوادم المنصة Supabase ولا يتم إرسالها أو نشرها نهائياً على منصة YouTube أو دردشتها العامة).</em></li>
+        <li><strong>شركات ومندوبو التوصيل المحليون (Local Delivery Couriers):</strong> تتم مشاركة بيانات التوصيل الأساسية (اسم الطالب، رقم هاتفه، والعنوان الوصفي) حصراً ومباشرة مع مندوب التوصيل المعتمد لغرض تسليم النسخة الورقية من الملازم وتحصيل المبلغ نقداً عند الاستلام.</li>
+        <li><strong>إجراءات التسجيل الأكاديمي والرسوم:</strong> يتم تسجيل وتأكيد قيد الطلاب في البرامج التدريبية المعتمدة بالتنسيق مع إدارة الأكاديمية ومراكز التسجيل المعتمدة خارج التطبيق. <em>(بينما تسدد الملازم الورقية المطبوعة نقداً عند الاستلام COD).</em></li>
+    </ul>
+
+    <h2>8. أوقات الاستجابة والدعم الفني وإخلاء المسؤولية (Support & Service Continuity)</h2>
+    <div class="highlight-box">
+        • يبذل فريق العمل والأستاذة قصارى جهدهم للرد الفوري على استفسارات الطلاب وتفعيل الاشتراكات وتنسيق طلبات الملازم. ومع ذلك، <strong>وفي حالات استثنائية أو فترات ذروة الامتحانات وبداية العام الدراسي أو أعمال الصيانة الطارئة</strong>، قد يطرأ تأخير طفيف واستثنائي في الرد، وتخلي المنصة مسؤوليتها عن أي تأخير خارج عن الإرادة المعقولة.<br>
+        • لا تتحمل المنصة مسؤولية انقطاع الخدمة المؤقت الناتج عن انقطاعات شبكة الإنترنت العامة في العراق، أو قرارات قطع الإنترنت خلال الامتحانات الوزارية، أو مشاكل مزودي خدمة الاتصالات لدى المستخدم.
+    </div>
+
+    <h2>9. الفئة العمرية وسياسة القُصّر (Age Limitation & Minor Policy)</h2>
+    <p>
+        المنصة موجهة لطلاب المراحل المتوسطة والإعدادية وما فوقها (من سن 13 عاماً فما فوق). نحن لا نقوم بجمع أو طلب أي بيانات شخصية عن قصد من الأطفال دون سن 13 عاماً. إذا كان عمر الطالب دون السن القانوني (18 عاماً)، فإن استخدام التطبيق والاشتراك في الدورات أو طلب الملازم يُشترط أن يتم بمعرفة وموافقة ولي الأمر أو المسؤول القانوني، وتُعد عملية تأكيد الطلب إقراراً بموافقة ولي الأمر.
+    </p>
+
+    <h2>10. حذف الحساب والبيانات وفترة السماح (Account Deletion & 7-Day Grace Period)</h2>
+    <p>
+        يحق للمستخدم في أي وقت طلب حذف حسابه وكافة بياناته وسجلاته نهائياً من خوادم المنصة وفقاً لسياسة Google Play لحماية بيانات المستخدمين:
+    </p>
+    <ul>
+        <li><strong>الحذف الذاتي المباشر من التطبيق:</strong> يمكن للمستخدم تقديم طلب الحذف مباشرة من داخل التطبيق بالانتقال إلى (الملف الشخصي &gt; حذف الحساب والبيانات).</li>
+        <li><strong>فترة السماح (7 أيام) والإلغاء التلقائي:</strong> حفاظاً على حقوق الطلاب والاشتراكات المفعلة ومنع الحذف غير المقصود، يتم إعطاء فترة سماح قدرها 7 أيام كاملة من تاريخ الطلب. إذا قام المستخدم بتسجيل الدخول إلى حسابه مجدداً خلال فترة الـ 7 أيام، يتم إلغاء طلب الحذف تلقائياً وفوراً واستعادة الحساب بالكامل.</li>
+        <li><strong>الحذف الكامل والنهائي (Complete Database Purge via CASCADE):</strong> في حال انتهاء فترة الـ 7 أيام دون تسجيل دخول، تُحذف نهائياً وكلياً كافة بيانات الحساب، بما في ذلك الملف الشخصي، طلبات وإيصالات الدفع، الاشتراكات، بصمات الأجهزة المسجلة، طلبات الملازم وعناوين الشحن المسجلة، ونتائج الاختبارات من قواعد البيانات والخوادم بشكل تام وتلقائي غير قابل للاسترجاع (ولا يتم الاحتفاظ بأي فواتير أو سجلات للمستخدم المحذوف في قواعد البيانات).</li>
+    </ul>
+
+    <!-- ── Dedicated Google Play Account Deletion Web Section (#account-deletion) ── -->
+    <div id="account-deletion" class="deletion-card">
+        <h3>🗑️ طلب حذف الحساب والبيانات عبر الويب (Web Account Deletion Request)</h3>
+        <p style="font-size: 13.5px; color: #7F1D1D; margin-bottom: 10px;">
+            <strong>متطلب أمان متجر Google Play:</strong> تتيح منصة عبير السعداوي التعليمية لجميع المستخدمين والطلاب طلب حذف الحساب والبيانات الشخصية حتى في حال إلغاء تثبيت التطبيق من أجهزتهم المحمولة.
+        </p>
+        <p style="font-size: 13px; color: #374151; margin-bottom: 6px;">
+            <strong>البيانات التي يتم حذفها نهائياً (Complete Data Purge):</strong><br>
+            • بيانات الملف الشخصي (الاسم، البريد الإلكتروني، رقم الهاتف، المحافظة).<br>
+            • صور إيصالات الدفع وسجلات الاشتراكات والتحويلات المالية.<br>
+            • بصمات الأجهزة المسجلة وسجلات الدخول.<br>
+            • طلبات الملازم الدراسية الورقية والعناوين المسجلة للشحن.<br>
+            • سجلات المتابعة والتقدم الدراسي وحلول الواجبات والاختبارات.
+        </p>
+
+        <div style="background: #FFFFFF; border: 1px solid #FECACA; border-radius: 10px; padding: 14px; margin: 12px 0;">
+            <strong style="color: #991B1B; font-size: 13.5px;">🔒 التحقق الأمني من هوية صاحب الحساب (Verification to Prevent Fraud):</strong>
+            <p style="font-size: 12.5px; color: #4B5563; margin-top: 6px; line-height: 1.6;">
+                لحماية حسابات الطلاب ومنع أي طرف خارجي من حذف حساب غيره، تخضع الطلبات للتدقيق التالي قبل التنفيذ:<br>
+                1. <strong>تطابق وسيلة الإرسال:</strong> يجب إرسال الطلب حصراً من <strong>البريد الإلكتروني المسجل في التطبيق</strong> أو من <strong>رقم الواتساب المسجل</strong> بالحساب (تُرفض الطلبات المرسلة من أرقام أو إيميلات مجهولة).<br>
+                2. <strong>بيانات التحقق:</strong> يجب ذكر الاسم الكامل ورقم الهاتف والدورة المسجل بها لمطابقتها في قاعدة البيانات.<br>
+                3. <strong>فترة الأمان (7 أيام):</strong> بعد جدولة الحذف، يتم منح مهلة 7 أيام؛ فإذا كان الطلب غير مصرح به، يكفي أن يقوم الطالب بتسجيل الدخول للتطبيق ليتم <strong>إلغاء الحذف فورياً واستعادة الحساب تلقائياً</strong>.
+            </p>
+        </div>
+
+        <p style="font-size: 13px; color: #374151; margin-top: 10px;">
+            <strong>طرق تقديم طلب الحذف:</strong><br>
+            1. <strong>عبر التطبيق (مباشر وفوري):</strong> افتح التطبيق وانتقل إلى (الملف الشخصي &gt; حذف الحساب والبيانات).<br>
+            2. <strong>عبر البريد الإلكتروني أو واتساب:</strong> انقر على أحد الأزرار أدناه، أو استخدم زر النسخ إذا لم يفتح تطبيق البريد لديك تلقائياً:
+        </p>
+
+        <div style="background: #F9FAFB; border: 1px dashed #D1D5DB; border-radius: 8px; padding: 12px; margin: 10px 0; font-size: 13px;">
+            <div>📧 <strong>البريد الإلكتروني الرسمي:</strong> <code style="color: #B91C1C; font-weight: bold;">Abeerobaid97@gmail.com</code></div>
+            <div style="margin-top: 4px;">💬 <strong>هاتف خدمة العملاء / واتساب:</strong> <code style="color: #128C7E; font-weight: bold;">07747147728</code> (+9647747147728)</div>
+        </div>
+
+        <div class="action-buttons">
+            <a class="btn btn-delete" href="mailto:Abeerobaid97@gmail.com?subject=%D8%B7%D9%84%D8%A8%20%D8%AD%D8%B0%D9%81%20%D8%AD%D8%B3%D8%A7%D8%A8%20%D9%81%D9%8A%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%20%D9%85%D9%86%D8%B5%D8%A9%20%D8%B9%D8%A8%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B3%D8%B9%D8%AF%D8%A7%D9%88%D9%8A&body=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9%20%D9%85%D9%86%D8%B5%D8%A9%20%D8%B9%D8%A8%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B3%D8%B9%D8%AF%D8%A7%D9%88%D9%8A%20%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85%D9%8A%D8%A9%D8%8C%0A%D8%A3%D8%B1%D8%AC%D9%88%20%D8%AD%D8%B0%D9%81%20%D8%AD%D8%B3%D8%A7%D8%A8%D9%8A%20%D9%88%D9%83%D8%A7%D9%81%D8%A9%20%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%D9%8A%20%D9%85%D9%86%20%D8%A7%D9%84%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%20%D9%86%D9%87%D8%A7%D8%A6%D9%8A%D8%A7%D9%8B%3A%0A-%20%D8%A7%D9%84%D8%A8%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%20%D8%A7%D9%84%D9%85%D8%B3%D8%AC%D9%84%3A%20%0A-%20%D8%B1%D9%82%D9%85%20%D8%A7%D9%84%D9%87%D8%A7%D8%AA%D9%81%20%D8%A7%D9%84%D9%85%D8%B3%D8%AC%D9%84%3A%20%0A-%20%D8%A7%D8%B3%D9%85%20%D8%A7%D9%84%D8%B7%D8%A7%D9%84%D8%A8%3A%20%0A%D8%A3%D9%82%D8%B1%20%D8%A8%D8%B9%D9%84%D9%85%D9%8A%20%D8%A8%D8%A3%D9%86%20%D8%A7%D9%84%D8%AD%D8%B0%D9%81%20%D9%86%D9%87%D8%A7%D8%A6%D9%8A%20%D8%A8%D8%B9%D8%AF%20%D8%A7%D9%86%D9%82%D8%B6%D8%A7%D8%A1%20%D9%81%D8%AA%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B3%D9%85%D8%A7%D8%AD%20(7%20%D8%A3%D9%8A%D8%A7%D9%85).">
+                ✉️ فتح تطبيق الإيميل لإرسال الطلب
+            </a>
+            <a class="btn btn-whatsapp" href="https://wa.me/9647747147728?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AA%D9%82%D8%AF%D9%8A%D9%85%20%D8%B7%D9%84%D8%A8%20%D8%AD%D8%B0%D9%81%20%D8%AD%D8%B3%D8%A7%D8%A8%D9%8A%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%D9%8A%20%D9%85%D9%86%20%D9%85%D9%86%D8%B5%D8%A9%20%D8%B9%D8%A8%D9%8A%D8%B1%20%D8%A7%D9%84%D8%B3%D8%B9%D8%AF%D8%A7%D9%88%D9%8A" target="_blank" rel="noopener noreferrer">
+                💬 مراسلة الدعم عبر واتساب (07747147728)
+            </a>
+            <button class="btn btn-copy" onclick="copyDeletionTemplate()">
+                📋 نسخ البريد وصيغة الطلب للحافظة
+            </button>
+        </div>
+        <div id="copyAlert" class="copy-alert">
+            ✅ تم نسخ البريد الإلكتروني وصيغة الطلب بنجاح! يمكنك الآن لصقها في أي تطبيق بريد أو مراسلة تفضله.
+        </div>
+    </div>
+
+    <h2>11. إخلاء المسؤولية الأكاديمية والقرارات الوزارية (Educational Outcomes & Ministerial Decisions Disclaimer)</h2>
+    <p>
+        الخدمات والمحاضرات والاختبارات والملازم المعروضة عبر التطبيق هي وسائل تعليمية مساعدة تهدف إلى تبسيط وشرح المناهج الدراسية المقررة. <strong>لا تقدم المنصة أو كادرها أي ضمان صريح أو ضمني بحصول الطالب على درجة أو معدل محدد في الامتحانات المدرسية أو الوزارية، أو القبول في كلية معينة</strong>؛ فالتحصيل العلمي والتفوق الدراسي يعتمدان كلياً على الجهد والمثابرة الفردية للطالب وتوفيقه. كما <strong>تُخلي المنصة مسؤوليتها عن أي تعديلات، حذوفات، تكييف مناهج، أو قرارات تصدر من وزارة التربية العراقية بشأن المناهج أو المواعيد، ولا يترتب على تلك القرارات أي حق في استرداد رسوم الدورات أو التعويض</strong>.
+    </p>
+
+    <h2>12. حدود المسؤولية القانونية والمالية (Limitation of Liability & Liability Cap)</h2>
+    <div class="highlight-box">
+        • إلى أقصى حد تجيزه القوانين النافذة، لا تتحمل منصة عبير السعداوي أو كادرها أي مسؤولية عن أي أضرار غير مباشرة، أو تبعية، أو خسائر معنوية ناجمة عن استخدام التطبيق أو فوات فرصة أو انقطاع طارئ في الخدمة.<br>
+        • <strong>سقف المسؤولية المالية (Liability Cap):</strong> في حال ثبوت أي مسؤولية قانونية أو تقنية على المنصة بموجب حكم قضائي بات ونهائي، فإن الحد الأقصى المطلق لأي تعويض مالي أو التزام مالي تتحمله المنصة يقتصر حصراً ولا يتجاوز بأي حال من الأحوال <strong>إجمالي المبلغ الفعلي الذي دفعه المستخدم نظير الاشتراك في الدورة موضوع النزاع داخل التطبيق</strong>.
+    </div>
+
+    <h2>13. القانون الواجب التطبيق والاختصاص القضائي (Governing Law & Jurisdiction)</h2>
+    <p>
+        تخضع هذه الاتفاقية وسياسة الخصوصية وتُفسر وتُطبق وفقاً للقوانين والأنظمة المعمول بها في <strong>جمهورية العراق</strong>. وتختص <strong>محاكم مدينة بغداد</strong> حصراً دون غيرها بالنظر والفصل في أي نزاع أو مطالبة قانونية تنشأ عن أو تتعلق باستخدام هذا التطبيق أو تفسير هذه الشروط.
+    </p>
+
+    <h2>14. تعديل الشروط والإخطار (Amendments & Notifications)</h2>
+    <p>
+        نحتفظ بالحق في تحديث وتعديل بنود هذه السياسة في أي وقت لمواكبة التحديثات التقنية والقانونية أو إطلاق ميزات جديدة في التطبيق أو معايير متاجر التطبيقات الدولية. يتم نشر أي تعديل على هذه الصفحة مع تحديث تاريخ السريان ورقم الإصدار، ويُعد استمرار استخدام الطالب للتطبيق بعد تاريخ التحديث بمثابة موافقة تامة وغير مشروطة على التعديلات الجديدة.
+    </p>
+
+    <div class="contact-box">
+        <h3>15. قنوات التواصل والدعم الفني الرسمي</h3>
+        <p>الرابط الدائم لسياسة الخصوصية: <a href="https://abeer-alsaadawi.com/privacy" target="_blank" rel="noopener noreferrer">https://abeer-alsaadawi.com/privacy</a></p>
+        <p style="margin-top: 8px;">البريد الإلكتروني للدعم والاستفسارات القانونية:</p>
+        <p><a href="mailto:Abeerobaid97@gmail.com">Abeerobaid97@gmail.com</a></p>
+        <p style="margin-top: 8px;">الهاتف وخدمة العملاء (واتساب): <a href="https://wa.me/9647747147728" target="_blank" rel="noopener noreferrer"><strong>07747147728</strong> (+964 774 714 7728)</a></p>
+        <p style="margin-top: 8px; font-size: 13px; color: var(--text-muted);">بغداد، جمهورية العراق</p>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 منصة عبير السعداوي التعليمية — جميع الحقوق محفوظة ومحمية قانونياً</p>
+    </div>
+</div>
+
+<script>
+function copyDeletionTemplate() {
+    const textToCopy = "إلى: Abeerobaid97@gmail.com\n" +
+        "واتساب: 07747147728 (+9647747147728)\n" +
+        "الموضوع: طلب حذف حساب في تطبيق منصة عبير السعداوي\n\n" +
+        "السلام عليكم إدارة منصة عبير السعداوي التعليمية،\n" +
+        "أرجو حذف حسابي وكافة بياناتي من التطبيق نهائياً:\n" +
+        "- البريد الإلكتروني المسجل: \n" +
+        "- رقم الهاتف المسجل: \n" +
+        "- اسم الطالب الكامل: \n" +
+        "- الدورة / الصف الدراسي: \n" +
+        "أقر بعلمي بأن الحذف نهائي بعد انقضاء فترة السماح (7 أيام).";
+
+    if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(textToCopy).then(showCopyAlert).catch(fallbackCopy);
+    } else {
+        fallbackCopy();
+    }
+
+    function fallbackCopy() {
+        const textArea = document.createElement("textarea");
+        textArea.value = textToCopy;
+        textArea.style.position = "fixed";
+        textArea.style.left = "-999999px";
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+        try {
+            document.execCommand('copy');
+            showCopyAlert();
+        } catch (err) {
+            alert("يرجى إرسال طلب الحذف إلى Abeerobaid97@gmail.com أو عبر واتساب 07747147728");
+        }
+        document.body.removeChild(textArea);
+    }
+}
+
+function showCopyAlert() {
+    const alertBox = document.getElementById("copyAlert");
+    if (alertBox) {
+        alertBox.style.display = "block";
+        setTimeout(() => {
+            alertBox.style.display = "none";
+        }, 5000);
+    }
+}
+</script>
+</body>
+</html>
