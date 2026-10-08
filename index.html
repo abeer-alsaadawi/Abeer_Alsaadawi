@@ -557,6 +557,129 @@
             opacity: 1;
             transform: translateX(-50%) translateY(0);
         }
+        /* APK Modal Styles */
+        .apk-modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            z-index: 999999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .apk-modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        .apk-modal-card {
+            background: linear-gradient(145deg, #1e293b, #0f172a);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 24px;
+            padding: 36px 26px 26px;
+            max-width: 440px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.8), 0 0 40px rgba(56, 189, 248, 0.15);
+            transform: scale(0.92) translateY(20px);
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            direction: rtl;
+            font-family: 'Cairo', sans-serif;
+            box-sizing: border-box;
+        }
+        .apk-modal-overlay.active .apk-modal-card {
+            transform: scale(1) translateY(0);
+        }
+        .apk-modal-close {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: #94a3b8;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            font-size: 22px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+            line-height: 1;
+        }
+        .apk-modal-close:hover {
+            background: rgba(239, 68, 68, 0.2);
+            color: #ef4444;
+            border-color: rgba(239, 68, 68, 0.4);
+        }
+        .apk-modal-icon-wrap {
+            width: 68px;
+            height: 68px;
+            margin: 0 auto 18px;
+            background: linear-gradient(135deg, rgba(56, 189, 248, 0.15), rgba(16, 185, 129, 0.15));
+            border: 1px solid rgba(56, 189, 248, 0.35);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 24px rgba(56, 189, 248, 0.2);
+        }
+        .apk-modal-icon {
+            width: 36px;
+            height: 36px;
+            fill: #38bdf8;
+        }
+        .apk-modal-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin: 0 0 10px;
+            line-height: 1.4;
+        }
+        .apk-modal-desc {
+            font-size: 0.95rem;
+            color: #cbd5e1;
+            line-height: 1.6;
+            margin: 0 0 22px;
+        }
+        .apk-download-action-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 14px 20px;
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: #ffffff !important;
+            text-decoration: none;
+            font-size: 1.05rem;
+            font-weight: 700;
+            border-radius: 14px;
+            box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.45);
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+        }
+        .apk-download-action-btn:hover {
+            background: linear-gradient(135deg, #059669, #047857);
+            transform: translateY(-2px);
+            box-shadow: 0 14px 30px -5px rgba(16, 185, 129, 0.6);
+            color: #ffffff !important;
+        }
+        .apk-modal-note {
+            font-size: 0.8rem;
+            color: #94a3b8;
+            margin-top: 14px;
+        }
         .app-download-buttons {
             display: flex;
             gap: 1.2rem;
@@ -918,14 +1041,14 @@
 
                 <!-- Download Store Buttons -->
                 <div class="app-download-buttons">
-                    <a href="#" class="store-btn" onclick="showAppComingSoon(event)">
+                    <a href="javascript:void(0)" class="store-btn" onclick="showGooglePlayModal(event)">
                         <svg viewBox="0 0 24 24" class="store-svg"><path d="M3.609 1.814L13.792 12 3.61 22.186c-.37-.24-.61-.66-.61-1.186V3c0-.526.24-.946.61-1.186zM15.207 13.414l2.42 2.42-12.02 6.94 9.6-9.36zm0-2.828L5.607 1.226l12.02 6.94-2.42 2.42zm1.414 1.414l3.19-1.84c.82-.47.82-1.25 0-1.72l-3.19-1.84-2.12 2.12 2.12 2.28z"/></svg>
                         <div class="store-btn-text">
                             <span class="store-btn-small">تحميل لأجهزة Android</span>
                             <span class="store-btn-large">Google Play</span>
                         </div>
                     </a>
-                    <a href="#" class="store-btn" onclick="showAppComingSoon(event)">
+                    <a href="https://apps.apple.com/app/id6818197955" target="_blank" rel="noopener noreferrer" class="store-btn">
                         <svg viewBox="0 0 24 24" class="store-svg"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.61-.74 1.04-1.79.92-2.87-.97.04-2.15.65-2.82 1.44-.58.68-1.09 1.76-.95 2.82 1.09.08 2.22-.56 2.85-1.39z"/></svg>
                         <div class="store-btn-text">
                             <span class="store-btn-small">تحميل لأجهزة iPhone</span>
@@ -1388,6 +1511,31 @@
         </div>
     </footer>
 
+    <!-- Google Play Notice & APK Direct Download Modal -->
+    <div id="googlePlayModal" class="apk-modal-overlay" onclick="closeGooglePlayModal(event)">
+        <div class="apk-modal-card" onclick="event.stopPropagation()">
+            <button class="apk-modal-close" onclick="closeGooglePlayModal()" aria-label="إغلاق">&times;</button>
+            <div class="apk-modal-icon-wrap">
+                <svg viewBox="0 0 24 24" class="apk-modal-icon">
+                    <path d="M3.609 1.814L13.792 12 3.61 22.186c-.37-.24-.61-.66-.61-1.186V3c0-.526.24-.946.61-1.186zM15.207 13.414l2.42 2.42-12.02 6.94 9.6-9.36zm0-2.828L5.607 1.226l12.02 6.94-2.42 2.42zm1.414 1.414l3.19-1.84c.82-.47.82-1.25 0-1.72l-3.19-1.84-2.12 2.12 2.12 2.28z"/>
+                </svg>
+            </div>
+            <h3 class="apk-modal-title">سيتم نشر التطبيق على قوقل بلي قريباً</h3>
+            <p class="apk-modal-desc">
+                التطبيق قيد المراجعة النهائية في متجر Google Play وسيتوفر قريباً. بإمكانك تحميل وتثبيت النسخة الرسمية والمباشرة الآن لهواتف الأندرويد بصيغة APK:
+            </p>
+            <a href="https://drive.usercontent.google.com/download?id=1MA6SYPKt8KZoNAyEzlHLBNMxS4_bByQh&export=download" target="_blank" rel="noopener noreferrer" class="apk-download-action-btn">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                    <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/>
+                </svg>
+                <span>تحميل التطبيق المباشر (APK)</span>
+            </a>
+            <div class="apk-modal-note" style="line-height: 1.6; margin-top: 14px;">
+                💡 عند فتح الصفحة، اضغط على <span style="color: #38bdf8; font-weight: 700;">"تنزيل على أي حال"</span> لبدء التحميل فوراً
+            </div>
+        </div>
+    </div>
+
     <script>
         // Theme Toggle
         function toggleTheme() {
@@ -1511,29 +1659,34 @@
             setTimeout(() => { message.remove(); }, 2000);
         }
 
-        function showAppComingSoon(event) {
+        function showGooglePlayModal(event) {
             if (event) event.preventDefault();
-            const oldToast = document.querySelector('.app-alert-toast');
-            if (oldToast) oldToast.remove();
+            const modal = document.getElementById('googlePlayModal');
+            if (modal) {
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
 
-            const message = document.createElement('div');
-            message.className = 'app-alert-toast';
-            message.innerHTML = `
-                <div style="font-size: 1.35rem; font-weight: 700; margin-bottom: 6px; color: #34d399;">قريباً جداً</div>
-                <div style="font-size: 0.95rem; line-height: 1.6; color: #f1f5f9;">
-                    تطبيق <strong>منصة عبير السعداوي</strong> قيد المراجعة النهائية في المتجر وسيتوفر للتحميل لجميع الطلاب قريباً.
-                </div>
-            `;
-            document.body.appendChild(message);
-            
-            setTimeout(() => {
-                message.classList.add('show');
-            }, 10);
+        function closeGooglePlayModal(event) {
+            if (event && event.target && event.target.closest && event.target.closest('.apk-modal-card') && !event.target.classList.contains('apk-modal-close')) {
+                return;
+            }
+            const modal = document.getElementById('googlePlayModal');
+            if (modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
 
-            setTimeout(() => {
-                message.classList.remove('show');
-                setTimeout(() => { message.remove(); }, 400);
-            }, 3500);
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeGooglePlayModal();
+            }
+        });
+
+        function showAppComingSoon(event) {
+            showGooglePlayModal(event);
         }
 
         function animateButton(button) {
